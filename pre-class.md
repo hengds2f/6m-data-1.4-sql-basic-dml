@@ -17,6 +17,9 @@ In this lesson, we move from building the "containers" (DDL) to handling the "co
 
 * **Transform** data on the fly using CASE logic and CAST functions.
 
+### Video introduction
+Watch this - 🎬 [Intro to SQL DML](https://youtu.be/SbtP9O6qOAA?si=94M75fLMsQtjOFt2)
+
 ### **2\. Setup Instructions**
 
 1. **Tool:** Ensure **DbGate** is installed on your machine.  
