@@ -120,6 +120,12 @@ ORDER BY
   resale_price DESC;
 ```
 
+**Exercise**
+
+“I want to find a home for my parents. They need something larger than 100sqm, but my budget is strictly under $600,000. How would we write that rule?”
+
+> **What’s Your Query?**
+
 ##### Filters
 
 Filters are used to filter data based on a condition. The `WHERE` clause is used to filter data in a `SELECT` statement and commonly uses comparison and logical operators. 
@@ -227,12 +233,6 @@ SELECT
 FROM
   resale_flat_prices_2017;
 ```
-
-**Exercise**
-
-“I want to find a home for my parents. They need something larger than 100sqm, but my budget is strictly under $600,000. How would we write that rule?”
-
-> **What’s Your Query?**
 
 ***
 
@@ -470,36 +470,7 @@ Learners will be able to categorize data using `CASE`, convert data types with `
 
 #### Task 5: Categorizing with CASE
 
-**Warm-Up CASE**
-
-```sql
-SELECT
-  town,
-  resale_price,
-  CASE
-    WHEN resale_price > 500000 THEN 'High'
-    ELSE 'Low'
-  END AS price_level
-FROM
-  resale_flat_prices_2017;
-```
-
-Multi-level CASE:
-
-```sql
-SELECT
-  town,
-  resale_price,
-  CASE
-    WHEN resale_price > 1000000 THEN 'High'
-    WHEN resale_price > 500000 THEN 'Medium'
-    ELSE 'Low'
-  END AS price_level
-FROM
-  resale_flat_prices_2017;
-```
-
-**Main Task – Price Categories (6m)**
+**Price Categories**
 
 ```sql
 SELECT
@@ -559,7 +530,7 @@ FROM
   resale_flat_prices_2017;
 ```
 
-**Main Task – Convert text to a real date and extract the year (6m)**
+**Main Task – Convert text to a real date and extract the year**
 
 ```sql
 SELECT
@@ -622,5 +593,3 @@ It is shorthand for `CAST(value AS datatype)`; for example, `resale_price::INTEG
 -  **Business Use Case:** Why is it important to standardize date formats when merging data from two different countries?
 
 ***
-
-If you’d like, I can now trim this further to a strict 3‑hour run sheet (with timings) or split out “core vs optional” blocks for your different learner profiles.
